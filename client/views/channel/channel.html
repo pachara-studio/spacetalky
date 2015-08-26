@@ -1,0 +1,15 @@
+<template name="channel">
+  <h1>{{channel.name}}</h1>
+  <ul>
+    {{#each channel}}
+      <li>
+        {{messages}}
+      </li>
+    {{/each}}
+  </ul>
+  <form>
+    <textarea rows="1" cols="100"></textarea>
+  </form>
+  
+  {{> home}}
+</template>

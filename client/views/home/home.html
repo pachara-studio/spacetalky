@@ -1,0 +1,12 @@
+<template name="home">
+  <form>
+    <label for="name">Channel name:</label>
+    <input id="name" type="text">
+    <button type="submit">Add</button>
+  </form>
+  <ul>
+    {{#each channel}}
+      <li><a href="/channel/{{_id}}">{{name}}</a></li>
+    {{/each}}
+  </ul>
+</template>
